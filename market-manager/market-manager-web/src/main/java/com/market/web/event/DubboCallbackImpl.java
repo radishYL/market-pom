@@ -20,6 +20,8 @@ public class DubboCallbackImpl implements DubboCallback {
 		}
 	}
 
+	
+	
 	@Override
 	public void onThrow(long userId, Throwable t) {
 		System.err.println(userId+" 查询失败:"+t);
