@@ -253,6 +253,13 @@
         <artifactId>guava</artifactId>
         <version>21.0</version>
     </dependency>
+    
+	<dependency>
+          <groupId>io.netty</groupId>
+          <artifactId>netty-all</artifactId>
+          <version>5.0.0.Alpha1</version>
+	</dependency>
+    
   	</dependencies>
   </dependencyManagement>
   

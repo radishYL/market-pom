@@ -85,7 +85,13 @@
 		<groupId>javax.servlet</groupId>
 		<artifactId>jsp-api</artifactId>
 		<scope>provided</scope>
-	</dependency>	
+	</dependency>
+	
+	<dependency>
+          <groupId>io.netty</groupId>
+          <artifactId>netty-all</artifactId>
+	</dependency>
+		
   </dependencies>			
   <!-- 配置tomcat插件 -->
 	<build>
