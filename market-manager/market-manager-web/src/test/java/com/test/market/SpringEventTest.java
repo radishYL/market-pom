@@ -1,4 +1,4 @@
-package com.market.test;
+package com.test.market;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
