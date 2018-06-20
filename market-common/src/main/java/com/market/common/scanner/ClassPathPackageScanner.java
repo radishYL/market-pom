@@ -31,7 +31,6 @@ public class ClassPathPackageScanner {
 		
 		URL url = loader.getResource(splash);
 		
-		System.out.println("url -> " + url);
 		if(url == null) {
 			return;
 		}
