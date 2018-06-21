@@ -8,7 +8,7 @@ public class ScannerTest {
 
 	public static void main(String[] args) {
 		
-		ClassPathPackageScanner scanner = new ClassPathPackageScanner("com.market.common");
+		ClassPathPackageScanner scanner = new ClassPathPackageScanner("com.market.web");
 		
 		List<String> names = scanner.scan();
 		
@@ -17,6 +17,7 @@ public class ScannerTest {
 			System.err.println(name);
 			
 		}
+		
 		
 	}
 	

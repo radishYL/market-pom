@@ -6,7 +6,10 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+/**
+ * 包扫描器
+ * @author alex
+ */
 public class ClassPathPackageScanner {
 
 	private String basePackage;
