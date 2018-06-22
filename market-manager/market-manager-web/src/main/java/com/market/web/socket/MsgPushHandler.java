@@ -17,7 +17,7 @@ public class MsgPushHandler extends SimpleChannelInboundHandler<String>{
 	private static ChannelGroup group = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 	
 	@Override
-	protected void messageReceived(ChannelHandlerContext ctx, String msg) throws Exception {
+	protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
 		// 收到String类型的消息
 	}
 

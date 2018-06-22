@@ -1,6 +1,11 @@
 package com.test.market;
 
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.List;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
 
 import com.market.common.scanner.ClassPathPackageScanner;
 
@@ -18,6 +23,14 @@ public class ScannerTest {
 			
 		}
 		
+	}
+	
+	@Test
+	public void test01() throws URISyntaxException {
+		
+		URL url = ApplicationContext.class.getProtectionDomain().getCodeSource().getLocation();
+		
+		System.err.println(url.toURI());
 		
 	}
 	
