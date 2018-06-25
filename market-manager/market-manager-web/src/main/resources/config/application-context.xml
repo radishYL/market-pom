@@ -45,4 +45,8 @@
 	    <property name="taskExecutor" ref="coreEventTaskExecutor"/>
     </bean>   
     
+ <!--    <bean id="webScoketServer" class="com.market.common.netty.WebsocketServer" init-method="start">
+    		<property name="port" value="8899"/>
+    </bean> -->
+    
 </beans>        

@@ -4,7 +4,39 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
 <body>
+<script type="text/javascript">
+	var socket;
+	if (window.WebSocket) {
+		alert("开始连接");
+		socket = new WebSocket("ws://localhost:8899/ws/test"); 
+		doSome();
+	} else {
+		alert("你的浏览器不支持 WebSocket!");
+	}
+
+	function doSome() {
+		if(socket !=null && socket.readyState == 1){
+			alert("发送消息");
+			socket.send("hello netty server");
+			socket.onmessage = function(event) {
+				alert(111);
+			};
+			socket.onopen = function() {
+				socket.send("hello netty server");
+				alert("连上了");
+			};
+			socket.onclose = function() {
+				
+			};
+		}else{
+			setTimeout(doSome,500);
+		}
+	}
+	
+</script>
 	<h1>你好，欢迎！</h1>
 </body>
+
 </html>

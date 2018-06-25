@@ -104,6 +104,8 @@
 	</build> -->
 	
    <!-- 配置jetty插件 -->
+   <build>
+    <plugins>
 	<plugin>
 		<groupId>org.mortbay.jetty</groupId>
 		<artifactId>jetty-maven-plugin</artifactId>
@@ -125,6 +127,7 @@
 	        </systemProperties>
 		</configuration>
 	</plugin>
-  
+    </plugins>
+  </build>
   
 </project>
