@@ -3,6 +3,7 @@ package com.market.service.test;
 import javax.jms.Message;
 import javax.jms.ObjectMessage;
 
+import org.junit.Test;
 import org.springframework.jms.core.JmsTemplate;
 
 import com.market.common.mq.JmsTemplateProvider;
@@ -35,5 +36,10 @@ public class MyTest {
 		
 	}
 	
-	
+	@Test
+	public void test02() {
+		String parttern = "update from '%s','%s'";
+		
+		System.err.println(String.format(parttern, "twu1293qorw","4651872"));
+	}
 }
