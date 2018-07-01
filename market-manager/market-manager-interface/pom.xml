@@ -6,6 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>market-manager-interface</artifactId>
+  <packaging>jar</packaging>
   <name>market-manager-interface</name>
   <description>后台管理工程--服务层接口</description>
   
@@ -23,6 +24,13 @@
 				<encoding>UTF-8</encoding>
  				</configuration>
  			</plugin>
+ 			
+ 		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-jar-plugin</artifactId>
+  			<version>2.4</version>
+  		</plugin>
+ 			
   	</plugins>
   </build>
   

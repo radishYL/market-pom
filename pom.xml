@@ -120,11 +120,7 @@
 		</dependency>
   		
   		<!-- dubbo相关 -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>dubbo</artifactId>
-			<version>${dubbo.version}</version>
-		</dependency>
+	
 		<dependency>
 			<groupId>org.apache.zookeeper</groupId>
 			<artifactId>zookeeper</artifactId>
@@ -202,7 +198,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo</artifactId>
-			<version>2.5.3</version>  
+			<version>${dubbo.version}</version>  
 			<!-- 排除依赖 -->
 			<exclusions>
 				<exclusion>
@@ -215,17 +211,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.zookeeper</groupId>
-			<artifactId>zookeeper</artifactId>
-			<version>3.4.6</version>  
-		</dependency>
-		<dependency>
-			<groupId>com.github.sgroschupf</groupId>
-			<artifactId>zkclient</artifactId>
-			<version>0.1</version>
-		</dependency>
-        
+	
     <dependency>
 	    <groupId>redis.clients</groupId>
 	    <artifactId>jedis</artifactId>

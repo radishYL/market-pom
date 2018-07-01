@@ -6,7 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>market-manager-service</artifactId>
-  <!-- <packaging>war</packaging> -->
+  <packaging>war</packaging>
   <name>market-manager-service</name>
   <description>后台管理工程--服务层</description>
   
@@ -129,5 +129,6 @@
 	</plugin>
     </plugins>
   </build>
+  
   
 </project>

@@ -6,6 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>market-common</artifactId>
+   <packaging>jar</packaging>
   <name>market-common</name>
   <description>存放常用工具类、及其它模块公用类的工程</description>
   
@@ -102,11 +103,6 @@
 	  		<artifactId>commons-lang3</artifactId>
 	  	</dependency>
 	  	
-	  	<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-all</artifactId>
-		</dependency>
-	  	
 		<dependency>
 		    <groupId>redis.clients</groupId>
 		    <artifactId>jedis</artifactId>
@@ -151,6 +147,7 @@
 	          <skipTests>true</skipTests>  
 	        </configuration>  
 	      </plugin>  
+	      
 	      
 	      <!-- java编译插件、定义jdk版本 -->
  			<plugin>

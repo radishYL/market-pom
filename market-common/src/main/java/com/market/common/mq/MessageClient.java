@@ -9,7 +9,7 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 
 /**
- * 发送消息的客户端
+ * 鍙戦�佹秷鎭殑瀹㈡埛绔�
  * @author alex
  */
 public class MessageClient {
@@ -29,13 +29,13 @@ public class MessageClient {
 	}
 	
 	/**
-	 * 约定--消息发送之前根据msgId进行入库
-	 * 		 发送之后更改消息状态
+	 * 绾﹀畾--娑堟伅鍙戦�佷箣鍓嶆牴鎹甿sgId杩涜鍏ュ簱
+	 * 		 鍙戦�佷箣鍚庢洿鏀规秷鎭姸鎬�
 	 * @param message
 	 * @return
 	 */
 	@SuppressWarnings("rawtypes")
-	public MqResponse sendMsg(MQMessage message){
+	public MqResponse sendMsg(final MQMessage message){
 		MsgSendResponse ret = new MsgSendResponse();
 		try {
 			JmsTemplate jms = JmsTemplateProvider.getJmsTemplate();

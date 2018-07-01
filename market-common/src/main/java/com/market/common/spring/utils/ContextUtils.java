@@ -6,9 +6,9 @@ import org.springframework.context.ApplicationContextAware;
 
 public class ContextUtils implements ApplicationContextAware {
 	
-	private ApplicationContext context;
+	private static ApplicationContext context;
 	
-	public ApplicationContext getContext(){
+	public static ApplicationContext getContext(){
 		return context;
 	}
 
@@ -16,5 +16,6 @@ public class ContextUtils implements ApplicationContextAware {
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 		context = applicationContext;
 	}
+	
 	
 }
