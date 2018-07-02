@@ -1,5 +1,7 @@
 package com.market.service.test;
 
+import java.text.MessageFormat;
+
 import javax.jms.Message;
 import javax.jms.ObjectMessage;
 
@@ -41,5 +43,13 @@ public class MyTest {
 		String parttern = "update from '%s','%s'";
 		
 		System.err.println(String.format(parttern, "twu1293qorw","4651872"));
+		
+		
+		String parttern2 = "update from {0},{1}";
+		
+		String s1 = "yl",s2 = "ly";
+		
+		System.err.println(MessageFormat.format(parttern2,"'" + s1 + "'",s2));
+		
 	}
 }
